@@ -40,6 +40,10 @@ urlpatterns = [
 
     # Blog API endpoints (posts, etc.)
     path('api/', include('blog.urls')),
+    
+    # Todo API Endpoints
+    path('api/todo', include('todo.urls')),
+
 
     # JWT Authentication endpoints
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
