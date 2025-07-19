@@ -1,0 +1,9 @@
+# Python
+*.pyc
+__pycache__/
+db.sqlite3
+.env
+
+# React
+todo-frontend/node_modules/
+todo-frontend/.env
