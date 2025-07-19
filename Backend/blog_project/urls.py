@@ -42,7 +42,7 @@ urlpatterns = [
     path('api/', include('blog.urls')),
     
     # Todo API Endpoints
-    path('api/todos', include('todo.urls')),
+    path('api/', include('todo.urls')),
 
 
     # JWT Authentication endpoints
