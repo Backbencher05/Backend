@@ -1,0 +1,85 @@
+✅ Step-by-Step: Install Node.js on Windows
+Go to: 👉 https://nodejs.org/
+
+Click the LTS (Recommended for most users) download button.
+
+Run the installer .msi file:
+
+Click Next through all prompts.
+
+Keep the npm package manager option selected ✅.
+
+At the end, check the box "Add to PATH" (usually checked by default).
+
+After installation finishes, open Command Prompt or PowerShell and check:
+
+
+node -v
+npm -v
+npx -v
+You should see version numbers. Example:
+
+node -v  → v18.17.1
+npm -v   → 9.8.0
+npx -v   → 9.8.0
+
+✅ Then Run This (Outside Your Backend Folder):
+npx create-react-app todo-frontend
+cd todo-frontend
+npm install axios react-router-dom
+
+
+
+✅ Step 1: Start the React App
+cd todo-frontend
+npm start
+This will start React on http://localhost:3000
+
+✅ Step 2: Install Axios for API calls
+In terminal (from inside todo-frontend):
+npm install axios
+
+
+✅ Step 3: Clean default files
+Inside todo-frontend/src/, delete:
+
+App.test.js
+
+logo.svg
+
+setupTests.js
+
+reportWebVitals.js
+
+And clean up App.js to:
+
+// src/App.js
+function App() {
+  return (
+    <div>
+      <h1>Todo App (React + Django)</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+✅ Step 4: Create Folder Structure
+Inside src/, create folders:
+
+src/
+├── components/
+├── pages/
+├── services/
+└── utils/
+
+These will hold:
+
+components → UI pieces like forms, todo list items
+
+pages → Login, Signup, TodoPage, etc.
+
+services → Axios code
+
+utils → Token utils, protected routes
